@@ -4,8 +4,8 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import { useState } from 'react';
 
-import { Section } from '@/components/ui/Section';
-import { Typo } from '@/components/ui/Typo';
+import Section from '@/components/ui/Section';
+import Typo from '@/components/ui/Typo';
 import images from '@/utils/context/projectsContext';
 
 import data from './projects.json';

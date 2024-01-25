@@ -1,7 +1,7 @@
 import { CSSProperties } from 'react';
 
 import Socials from '@/components/Socials';
-import { Typo } from '@/components/ui/Typo';
+import Typo from '@/components/ui/Typo';
 
 import s from './Join.module.scss';
 

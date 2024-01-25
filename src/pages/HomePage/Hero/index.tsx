@@ -5,9 +5,9 @@ import { useState } from 'react';
 
 import FeedbackForm from '@/components/FeedbackForm';
 import Modal from '@/components/Modal';
-import { Button } from '@/components/ui/Button';
-import { Section } from '@/components/ui/Section';
-import { Typo } from '@/components/ui/Typo';
+import Button from '@/components/ui/Button';
+import Section from '@/components/ui/Section';
+import Typo from '@/components/ui/Typo';
 
 import s from './Hero.module.scss';
 

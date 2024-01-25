@@ -1,7 +1,11 @@
 import Projects from './Projects';
 
 const PortfolioPage = () => {
-  return <Projects />;
+  return (
+    <>
+      <Projects />
+    </>
+  );
 };
 
 export default PortfolioPage;

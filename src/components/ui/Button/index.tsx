@@ -17,7 +17,7 @@ interface IButtonProps {
   children?: ReactElement;
 }
 
-export const Button: FC<IButtonProps> = props => {
+const Button: FC<IButtonProps> = props => {
   const {
     onClick,
     className,
@@ -44,3 +44,5 @@ export const Button: FC<IButtonProps> = props => {
     </button>
   );
 };
+
+export default Button;

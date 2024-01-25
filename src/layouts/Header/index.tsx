@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 import Logo from '@/components/Logo';
-import { Button } from '@/components/ui/Button';
+import Button from '@/components/ui/Button';
 import SvgIcon from '@/components/ui/SvgIcon';
 
 import BurgerMenu from './BurgerMenu';

@@ -25,7 +25,7 @@ interface ITypoProps extends PropsWithChildren {
   className?: string;
 }
 
-export const Typo: FC<ITypoProps> = props => {
+const Typo: FC<ITypoProps> = props => {
   const { className = '', el, fontWeight = 700, children } = props;
 
   return createElement(
@@ -40,3 +40,5 @@ export const Typo: FC<ITypoProps> = props => {
     children,
   );
 };
+
+export default Typo;

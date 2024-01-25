@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import ContactLink from '@/components/ui/ContactLink';
 import Logo from '@/components/Logo';
+import ContactLink from '@/components/ui/ContactLink';
 import { IContactData } from '@/utils/constants/contactData';
 
 import s from './Address.module.scss';

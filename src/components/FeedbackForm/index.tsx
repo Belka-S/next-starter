@@ -4,9 +4,9 @@ import classNames from 'classnames';
 import { FC } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import { Button } from '@/components/ui/Button';
+import Button from '@/components/ui/Button';
 import SvgIcon from '@/components/ui/SvgIcon';
-import { Typo } from '@/components/ui/Typo';
+import Typo from '@/components/ui/Typo';
 
 import s from './FeedbackForm.module.scss';
 

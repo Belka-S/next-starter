@@ -8,8 +8,10 @@ interface ISectionProps {
   children: ReactNode;
 }
 
-export const Section: FC<ISectionProps> = ({ className = '', children }) => {
+const Section: FC<ISectionProps> = ({ className = '', children }) => {
   return (
     <section className={classNames(s.section, className)}>{children}</section>
   );
 };
+
+export default Section;
