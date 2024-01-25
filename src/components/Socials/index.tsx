@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { FC } from 'react';
 
 import ContactLink, { ContactLinkVariant } from '@/components/ui/ContactLink';
@@ -14,18 +15,18 @@ const socials: Partial<keyof IContactData>[] = [
 ];
 
 interface ISocialsProps {
+  className?: string;
+  linkClassName?: string;
   variant?: ContactLinkVariant;
-  styleSocials?: string;
-  styleLink?: string;
 }
 
-const Socials: FC<ISocialsProps> = ({ variant, styleSocials, styleLink }) => {
+const Socials: FC<ISocialsProps> = ({ variant, className, linkClassName }) => {
   return (
-    <div className={styleSocials ? styleSocials : s.socials}>
+    <div className={classNames(s.contacts, className)}>
       {socials.map(el => (
         <ContactLink
           key={el}
-          className={styleLink ? styleLink : s.socials__link}
+          className={linkClassName ? linkClassName : s.socials__link}
           variant={variant ? variant : 'short'}
           source={el}
           target="_blank"

@@ -25,14 +25,14 @@ const BurgerMenu = ({ isOpen, setIsOpen }: IBurgerMenyProps) => {
         </button>
 
         <div onClick={() => setIsOpen(false)}>
-          <SiteNav styleNav={s.nav} styleLink={s.nav__link} />
+          <SiteNav className={s.nav} linkClassName={s.nav__link} />
         </div>
-        <ContactInfo styleInfo={s.contacts} styleLink={s.contacts__link} />
+        <ContactInfo className={s.contacts} linkClassName={s.contacts__link} />
 
         <Socials
           variant="title"
-          styleSocials={s.socials}
-          styleLink={s.socials__link}
+          className={s.socials}
+          linkClassName={s.socials__link}
         />
       </div>
     </div>

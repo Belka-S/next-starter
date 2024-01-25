@@ -8,16 +8,16 @@ import { FC } from 'react';
 import s from './SiteNav.module.scss';
 
 interface ISiteNavProps {
-  styleNav?: string;
-  styleLink?: string;
+  className?: string;
+  linkClassName?: string;
 }
 
-const SiteNav: FC<ISiteNavProps> = ({ styleNav, styleLink }) => {
+const SiteNav: FC<ISiteNavProps> = ({ className, linkClassName }) => {
   const pathname = usePathname();
 
   const setClassName = (path: string) => {
     return classNames(
-      styleLink ? styleLink : s.nav__link,
+      linkClassName ? linkClassName : s.nav__link,
       pathname === path && s.active,
     );
   };
@@ -31,7 +31,7 @@ const SiteNav: FC<ISiteNavProps> = ({ styleNav, styleLink }) => {
   }
 
   return (
-    <nav className={styleNav ? styleNav : s.nav}>
+    <nav className={classNames(s.nav, className)}>
       <Link className={setClassName('/')} href={'/'}>
         Studio
       </Link>

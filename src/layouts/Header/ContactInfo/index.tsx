@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React, { FC } from 'react';
 
 import ContactLink from '@/components/ui/ContactLink';
@@ -7,18 +8,18 @@ import { IContactData } from '@/utils/constants/contactData';
 import s from './ContactInfo.module.scss';
 
 interface IContactInfoProps {
-  styleInfo?: string;
-  styleLink?: string;
+  className?: string;
+  linkClassName?: string;
 }
 
 const contacts: Partial<keyof IContactData>[] = ['mail', 'phone'];
 
-const ContactInfo: FC<IContactInfoProps> = ({ styleInfo, styleLink }) => {
+const ContactInfo: FC<IContactInfoProps> = ({ className, linkClassName }) => {
   return (
-    <div className={styleInfo ? styleInfo : s.contacts}>
+    <div className={classNames(s.contacts, className)}>
       {contacts.map(el => (
         <ContactLink
-          className={styleLink ? styleLink : s.contacts__link}
+          className={linkClassName ? linkClassName : s.contacts__link}
           source={el}
           key={el}
         >
