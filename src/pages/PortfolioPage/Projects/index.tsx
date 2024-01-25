@@ -5,7 +5,9 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import Section from '@/components/ui/Section';
-import Typo from '@/components/ui/Typo';
+import H1 from '@/components/ui/Typography/H1';
+import H5 from '@/components/ui/Typography/H5';
+import P from '@/components/ui/Typography/P';
 import images from '@/utils/context/projectsContext';
 
 import data from './projects.json';
@@ -24,9 +26,7 @@ const Projects = () => {
 
   return (
     <Section className="container">
-      <Typo className="hidden" el="h1">
-        Portfolio
-      </Typo>
+      <H1 className="hidden">Portfolio</H1>
 
       <div className={s.filter}>
         {projectGroups.map(el => (
@@ -57,12 +57,12 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Typo el="h5" className={s.projects__title}>
+                <H5 className={s.projects__title}>
                   {el.name.replaceAll('-', ' ')}
-                </Typo>
-                <Typo el="p" fontWeight={400} className={s.projects__type}>
+                </H5>
+                <P fontWeight={400} className={s.projects__type}>
                   {el.type}
-                </Typo>
+                </P>
               </a>
             </div>
           );

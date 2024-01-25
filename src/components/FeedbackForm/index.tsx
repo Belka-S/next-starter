@@ -6,7 +6,7 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 
 import Button from '@/components/ui/Button';
 import SvgIcon from '@/components/ui/SvgIcon';
-import Typo from '@/components/ui/Typo';
+import H5 from '@/components/ui/Typography/H5';
 
 import s from './FeedbackForm.module.scss';
 
@@ -37,9 +37,9 @@ const FeedbackForm: FC<IFeedbackFormProps> = ({ setIsModal }) => {
 
   return (
     <>
-      <Typo el="h5" className={s.feedback__title}>
+      <H5 className={s.feedback__title}>
         Leave your request, we will call you back
-      </Typo>
+      </H5>
 
       <form className={s.feedback__form} onSubmit={handleSubmit(onSubmit)}>
         <label>Name</label>

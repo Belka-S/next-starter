@@ -7,7 +7,7 @@ import FeedbackForm from '@/components/FeedbackForm';
 import Modal from '@/components/Modal';
 import Button from '@/components/ui/Button';
 import Section from '@/components/ui/Section';
-import Typo from '@/components/ui/Typo';
+import H1 from '@/components/ui/Typography/H1';
 
 import s from './Hero.module.scss';
 
@@ -18,9 +18,9 @@ const Hero = () => {
   return (
     <>
       <Section className={classNames('container', s.hero)}>
-        <Typo el="h1" fontWeight={900} className={s.hero__title}>
+        <H1 fontWeight={900} className={s.hero__title}>
           Effective solutions for your business
-        </Typo>
+        </H1>
         <Button
           className={s.hero__btn}
           size="m"

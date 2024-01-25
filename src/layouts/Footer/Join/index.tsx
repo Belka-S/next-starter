@@ -1,14 +1,14 @@
 import { CSSProperties } from 'react';
 
 import Socials from '@/components/Socials';
-import Typo from '@/components/ui/Typo';
+import P from '@/components/ui/Typography/P';
 
 import s from './Join.module.scss';
 
 const Join = () => {
   return (
     <div className={s.join}>
-      <Typo el="p">Join</Typo>
+      <P>Join</P>
       <Socials />
     </div>
   );
