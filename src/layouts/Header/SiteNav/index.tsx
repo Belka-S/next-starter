@@ -14,14 +14,6 @@ interface ISiteNavProps {
 
 const SiteNav: FC<ISiteNavProps> = ({ className, linkClassName }) => {
   const pathname = usePathname();
-
-  const setClassName = (path: string) => {
-    return classNames(
-      linkClassName ? linkClassName : s.nav__link,
-      pathname === path && s.active,
-    );
-  };
-
   // ContactPage height
   if (typeof window !== 'undefined') {
     const bodyEl = document.querySelector('body');
@@ -29,6 +21,13 @@ const SiteNav: FC<ISiteNavProps> = ({ className, linkClassName }) => {
       bodyEl.style.height = pathname === '/contacts' ? '100vh' : '';
     }
   }
+
+  const setClassName = (path: string) => {
+    return classNames(
+      linkClassName ? linkClassName : s.nav__link,
+      pathname === path && s.active,
+    );
+  };
 
   return (
     <nav className={classNames(s.nav, className)}>
