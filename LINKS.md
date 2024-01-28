@@ -34,7 +34,7 @@
 - **[hh-mm-ss]**https://www.npmjs.com/package/hh-mm-ss
 - **[MaterialUI]**https://mui.com/
 - **[svg-symbol-sprite]**https://github.com/scriptex/svg-symbol-sprite
-- **[]**
+- **[next-themes]**https://github.com/pacocoursey/next-themes#html--css
 - **[]**
 - **[zustand]**https://github.com/pmndrs/zustand
 - **[redux]**https://redux.js.org
