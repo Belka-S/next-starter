@@ -4,7 +4,9 @@ export const getFiles = context => {
   context.keys().forEach((item, id) => {
     const name = item
       .replace(/\.(png|jpe?g|svg)$/, '')
-      .replace(`./${id + 1}-`, '');
+      .replace(`./`, '')
+      .replace(`${id + 1}-`, '')
+      .replace(`0${id + 1}-`, '');
 
     const file = context(item).default;
 
