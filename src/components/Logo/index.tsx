@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { FC } from 'react';
 
 import s from './Logo.module.scss';
@@ -7,11 +8,7 @@ interface ILogoProps {
 }
 
 const Logo: FC<ILogoProps> = ({ className }) => {
-  return (
-    <span className={s.logo}>
-      Web<span className={className}>Studio</span>
-    </span>
-  );
+  return <span className={classNames(s.logo, className)}>Logo</span>;
 };
 
 export default Logo;

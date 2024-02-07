@@ -1,34 +1,8 @@
-@import 'mixins';
-
 .footer {
-  max-width: 100vw;
-  padding-block: 60px;
-
-  background-color: var(--footer-color);
-
-  @include desktop {
-    flex-wrap: nowrap;
-    text-align: left;
-  }
+  padding: 10px;
+  border-top: 1px solid var(--border-color);
 }
 
 .footer__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--indent-l);
-
   text-align: center;
-  align-items: baseline;
-
-  @include tablet {
-    gap: 0;
-  }
-
-  @include desktop {
-    justify-content: space-between;
-    gap: var(--indent-xxl);
-    flex-wrap: nowrap;
-    text-align: left;
-  }
 }

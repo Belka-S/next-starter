@@ -1,36 +1,15 @@
-@import 'mixins';
-
 .header {
+  padding: 10px;
   border-bottom: 1px solid var(--border-color);
+  z-index: 99;
 }
 
 .header__wrap {
   display: flex;
-  align-items: baseline;
-
-  @include lessTablet {
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
-.header__logo {
-  font-weight: inherit;
-  color: var(--black-color);
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__btn {
-  margin-left: auto;
-
-  @include tablet {
-    display: none !important;
-  }
-
-  & svg {
-    transition: fill 250ms;
-  }
-  & svg:hover {
-    fill: var(--accent-color);
-  }
+  border-radius: 50%;
 }

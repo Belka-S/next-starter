@@ -12,27 +12,28 @@
 }
 
 // size
-
 .s {
+  min-width: 30px;
   height: 30px;
   padding: 8px;
   gap: 8px;
 }
 
 .m {
+  min-width: 50px;
   height: 50px;
   padding: 10px;
   gap: 10px;
 }
 
 .l {
+  min-width: 70px;
   height: 70px;
   padding: 12px;
   gap: 12px;
 }
 
 // variant
-
 .default {
   background-color: var(--accent-color);
   color: var(--white-color);
@@ -44,12 +45,13 @@
 }
 
 .outlined {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--icon-color);
+  background-color: var(--border-color);
   color: var(--black-color);
 
   &:hover,
   &:focus {
-    background-color: var(--border-color);
+    background-color: var(--icon-color);
   }
 }
 
